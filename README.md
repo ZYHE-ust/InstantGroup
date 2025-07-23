@@ -11,6 +11,7 @@ This is the official Pytorch implementaiton of ["InstantGroup: Instant Template 
 
 ## Training
 `python train_instantGroup.py`
+
 Please implement your own data loading function `load_img` in `utils.py` and pretrain the registration model by `python train_reg.py` for stable and efficient training of InstantGroup model.
 
 ## Testing
@@ -24,3 +25,6 @@ Please implement your own data loading function `load_img` in `utils.py` and pre
       year={2025},
       publisher={IEEE}
       }
+
+## Acknowledgements
+Some code of the project is modified from repository [voxelmorph](https://github.com/voxelmorph/voxelmorph).
