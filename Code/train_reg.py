@@ -3,7 +3,6 @@ from tqdm import tqdm
 from utils import *
 from reg_model import VxmDense
 import os
-import losses
 
 
 # parse the commandline
@@ -87,9 +86,9 @@ def train(args):
 
     # prepare image loss
     if args.image_loss == 'ncc':
-        image_loss_func = losses.ncc_loss
+        image_loss_func = ncc_loss
     elif args.image_loss == 'mse':
-        image_loss_func = losses.mse_loss
+        image_loss_func = mse_loss
     else:
         raise ValueError('Image loss should be "mse" or "ncc", but found "%s"' % args.image_loss)
 
@@ -98,7 +97,7 @@ def train(args):
     weights = [0.5, 0.5] if bidir else [1]
 
     # prepare deformation loss
-    loss_func += [losses.gradient_loss]
+    loss_func += [gradient_loss]
     weights += [args.weight]
 
     # training epochs
@@ -154,4 +153,3 @@ def train(args):
 if __name__ == '__main__':
     args = parser.parse_args()
     train(args)
-
