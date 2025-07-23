@@ -1,6 +1,7 @@
 # InstantGroup: Instant Template Generation for Scalable Group of Brain MRI Registration
 
 This is the official Pytorch implementaiton of ["InstantGroup: Instant Template Generation for Scalable Group of Brain MRI Registration."](https://ieeexplore.ieee.org/document/11080188) IEEE Transactions on Image Processing (2025) by Ziyi He and Albert C. S. Chung.
+![](https://github.com/ZYHE-ust/InstantGroup/blob/main/Doc/framework.jpg)
 
 ## Prerequistes
 - `Python 3.6.13+`
