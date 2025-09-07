@@ -19,6 +19,8 @@ Please implement your own data loading function `load_img` in `utils.py` and pre
 `python test_instantGroup.py`
 
 ## Citations
+If you find this repository helpful, you may cite
+
     @article{he2025instantgroup,
       title={InstantGroup: Instant Template Generation for Scalable Group of Brain MRI Registration},
       author={He, Ziyi and Chung, Albert CS},
